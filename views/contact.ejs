@@ -1,0 +1,28 @@
+<%- include("partials/header"); -%>
+<div class="hero">
+    <form action="https://formspree.io/f/xknlkbwn" method="POST">
+      <div class="message-icon">
+        <i class="bi bi-telegram"></i>
+        <span>Message</span>
+      </div>
+      <div id="input-field">
+        <i class="bi bi-person"></i>
+        <input type="text" placeholder="Name" name="Name">
+      </div>
+      <div id="input-field">
+        <i class="bi bi-telephone"></i>
+        <input type="text" placeholder="Phone No." name="Phone">
+      </div>
+      <div id="input-field">
+        <i class="bi bi-envelope"></i>
+        <input type="text" placeholder="Email Address" name="Email">
+      </div>
+      <div id="input-field">
+        <i class="bi bi-chat-right-dots"></i>
+        <textarea name="Messae" placeholder="Message" rows="10"></textarea>
+      </div>
+      <input type="submit" class="send-btn">
+    </form>
+  </div>
+
+<%- include("partials/footer"); -%>

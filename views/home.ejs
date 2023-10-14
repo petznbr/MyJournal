@@ -1,0 +1,14 @@
+<%- include("partials/header"); -%>
+<H1>Home</H1>
+<p>This is my daily journal where I can post whatevever.</p>
+<% if (locals.posts) { %>
+    <% posts.forEach ((post) => { %>
+        <h2><%=post.title%></h2>
+    <p>
+    <%=post.content.substring(0, 100) + " ..."%>
+    <a href="/posts/<%=post._id%>">Read More</a>
+    </p>
+   <% }); %>
+<% } %>
+
+<%- include("partials/footer"); -%>
